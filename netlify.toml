@@ -1,9 +1,9 @@
-[build]
-functions = "netlify/functions" # Directory for serverless functions
-publish = "static"              # Directory for static assets
-command = "npm install" # Build command (if needed)
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
 
 [[redirects]]
-from = "/*"
-to = "/.netlify/functions/server"
-status = 200
+  force = true
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
