@@ -2,6 +2,16 @@
   functions = "functions"
 
 [[redirects]]
+  from = "/blog/*"
+  to = "/.netlify/functions/server/blog"
+  status = 200
+
+[[redirects]]
+  from = "/blogpost/*"
+  to = "/.netlify/functions/server/blogpost/:splat"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/.netlify/functions/server"
   status = 200
