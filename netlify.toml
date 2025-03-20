@@ -1,7 +1,7 @@
 [build]
 functions = "netlify/functions" # Directory for serverless functions
 publish = "static"              # Directory for static assets
-command = "npm install && npm run build" # Build command (if needed)
+command = "npm install" # Build command (if needed)
 
 [[redirects]]
 from = "/*"
